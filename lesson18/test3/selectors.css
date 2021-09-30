@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fa-battery-full::before {
+    font-size: 16px;
+}
+
+.fa-battery-three-quarters::before {
+    font-size: 32px;
+}
+
+.fa-battery-half::before {
+    font-size: 64px;
+}
+
+.fa-battery-quarter::before {
+    font-size: 128px;
+}
+
+.fa-battery-empty::before {
+    font-size: 256px;
+}
+

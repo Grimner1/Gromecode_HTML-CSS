@@ -1,0 +1,74 @@
+@import 'layout.scss';
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.all {
+    display: flex;
+    flex-direction: column;
+
+    @include for-large {
+        flex-direction: row;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    
+
+    @include for-mid {
+        flex-direction: row;
+        flex: 2;
+    }
+
+    &__nav {
+        background-color: #ff7f50;
+        height: 200px;
+        display: flex;
+
+
+        @include for-mid {
+            flex: 1;
+        }
+    }
+
+    &__list {
+        background: #006400;
+        height: 200px;
+        display: flex;
+
+        @include for-mid {
+            flex: 1;
+        }
+    }
+}
+
+span {
+    text-transform: lowercase;
+    padding: 8px;
+    background: #faebd7;
+    border-radius: 4px;
+    margin: auto;
+}
+
+.news {
+    background: #0ff;
+    height: 200px;
+    display: flex;
+
+    @include for-large {
+        flex: 1;
+    }
+}
+
